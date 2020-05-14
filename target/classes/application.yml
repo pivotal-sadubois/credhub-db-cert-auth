@@ -13,6 +13,6 @@ db:
   baseUrl: jdbc:postgresql://postgre.pcfsdu.com
   databaseName: my_database
   username: sadubois
-  rootCert: ${vcap.services.credhub-cert.credentials.rootCert}
-  sslCert: ${vcap.services.credhub-cert.credentials.sslCert}
-  sslKey: ${vcap.services.credhub-cert.credentials.sskKey}
+  rootCert: ${vcap.services.credhub-postgre.credentials.rootCert}
+  sslCert: ${vcap.services.credhub-postgre.credentials.sslCert}
+  sslKey: ${vcap.services.credhub-postgre.credentials.sskKey}
