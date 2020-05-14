@@ -7,7 +7,7 @@ applications:
     buildpacks:
       - java_buildpack_offline
     services:
-      - credhub-cert
+      - credhub-postgre
     path: ./target/dbexample-0.0.1-SNAPSHOT.jar
 
 
