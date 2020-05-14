@@ -1,0 +1,18 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+spring:
+  jpa:
+    hibernate:
+      ddlAuto: update
+
+db:
+  baseUrl: jdbc:postgresql://postgre.pcfsdu.com
+  databaseName: my_database
+  username: sadubois
+  rootCert: ${vcap.services.credhub-cert.credentials.rootCert}
+  sslCert: ${vcap.services.credhub-cert.credentials.sslCert}
+  sslKey: ${vcap.services.credhub-cert.credentials.sskKey}
